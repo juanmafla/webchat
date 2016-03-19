@@ -1,0 +1,46 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+body {
+font-family: 'Roboto', sans-serif;
+    background-color: #ddd;
+}
+
+.chatbox {
+    width: 300px;
+    border-radius: 10px;
+    padding: 20px;
+    float: left;
+    clear: both;
+    margin-bottom: 10px;
+    display: none;
+    
+}
+
+.textinside {
+    float: left;
+    height: auto;
+    width: auto;
+}
+
+
+.typed-cursor{
+   display: none;
+}
+
+.person1 {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+
+.person2 {
+    background-color: #fff;
+    
+}
+
+.chats {
+    position: absolute;
+    bottom: 0px;
+}
+

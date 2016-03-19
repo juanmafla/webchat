@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Untitled Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/typed.js"></script>
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script>
+      $(function(){
+          
+          
+          $("#t1").typed({
+            strings: ["Hola, ¿me podéis pasar una foto con el menú del día?"],
+            typeSpeed: 20,          
+            callback: function() {                    
+                                      
+
+                    $("#t2").typed({
+                    strings: ["Buenos días, Alberto. Por supuesto. Ahora te lo envío"],
+                    typeSpeed: 20,
+                    startDelay: 1000,
+                    preStringTyped: function() {                 
+                    $("#t2").parent().fadeIn("slow");
+                    },
+                    callback: function() {
+                      
+                      
+                      $("#t3").typed({
+                        strings: ["            "],
+                        contentType: 'html',
+                        typeSpeed: 20, 
+                        startDelay: 1000,
+                        preStringTyped: function() {
+                        $("#t3").parent().fadeIn("slow");
+                        },
+                        callback: function() {
+                            $("#t3").html("<img src='http://blog.photoshelter.com/wp-content/uploads/2011/10/Print_6X8_300dpi_520877711.jpg'  width= '187'>");
+                           
+                            $("#t4").typed({
+                                strings: ["Perfecto. Me gustaría reservar mesa para </br> hoy a las 14:30 a nombre de Alberto Fernández."],
+                                 contentType: 'html',
+                                typeSpeed: 20,
+                                 startDelay: 1000,
+                                 preStringTyped: function() {
+                                     $("#t4").parent().fadeIn("slow");
+                                    },
+                                callback: function() {
+                                 
+                                 $("#t5").typed({
+                                    strings: ["Ya la tiene reservada. Le esperamos. "],
+                                    typeSpeed: 20,
+                                     startDelay: 1000,
+                                     preStringTyped: function() {
+                                     $("#t5").parent().fadeIn("slow");
+                                    },
+                                    callback: function() { 
+                                        $("#t6").typed({
+                                                strings: ["Gracias. "],
+                                                 startDelay: 1000,
+                                                 preStringTyped: function() {
+                                                     $("#t6").parent().fadeIn("slow");
+                                                    },
+                                                typeSpeed: 20
+                                              });
+                                    },
+                                  });
+                                },
+                              });
+                        }
+                      });
+                     },
+                  });
+            },
+          });
+          
+          
+        
+          
+     
+          
+     
+          
+          
+    
+          
+    
+          
+          
+          
+      });
+    </script>
+
+</head>
+<body>
+
+
+<div class="chats">
+
+<div class="chatbox person1" style="display:block;">
+<div id="t1" class="textinside"></div>
+</div>
+
+<div class="chatbox person2">
+<div id="t2" class="textinside"></div>
+</div>
+
+
+<div class="chatbox person2">
+<div id="t3" class="textinside"></div>
+</div>
+
+
+
+<div class="chatbox person1">
+<div id="t4" class="textinside"></div>
+</div>
+
+
+
+<div class="chatbox person2">
+<div id="t5" class="textinside"></div>
+</div>
+
+
+
+<div class="chatbox person1">
+<div id="t6" class="textinside"></div>
+</div>
+
+</div>
+
+</body>
+</html>
